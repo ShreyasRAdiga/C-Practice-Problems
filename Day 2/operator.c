@@ -102,3 +102,53 @@ int prime_numbers(){
     }
     
 }
+
+//finding sum of series
+void sum_of_seriess(){
+    int n = 5;
+    int a =n,sum;
+    for(int i=1;i<=n;i++){
+        int sum = sum+ i;
+        printf("%d",i);
+    }
+}
+
+//amicabel nubers
+
+int amicabel_numbers(){
+    int n = 220;
+    int i=1;
+    for(i=1;i<n;i++){
+    int divisor = n%i;
+    
+        if(divisor == 0){
+            printf("  %d  ",i);
+            
+        }
+    }
+    int sum =0;
+    sum=sum+i;
+    printf(" \n %d",sum);
+}
+
+//menu driven program
+int menu_driven_program(){
+    int sum,a,b,dif,prod,ch;
+    printf("\n Enter 1.To find the sum of two number 2. To find diffrence of two numbers 3.To find product of 2 numbers");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1: {
+            printf("Enter first number \n");
+            scanf("%d",&a);
+            printf("Enter second number \n");
+            scanf("%d",&b);
+            sum = a+b;
+            printf("%d",sum);
+            
+            break;
+        }
+        default:
+            return 0;
+    }
+    return 0;
+}
